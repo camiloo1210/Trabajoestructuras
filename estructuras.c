@@ -6,6 +6,7 @@ struct alumno
     char direccion[20];
     int edad;
     char carrera[20];
+    float promedio;
 };
 
 
@@ -29,6 +30,8 @@ int main()
     printf("Ingrese su carrera\n");
     fflush(stdin);//Ayuda a que el scanf no genere problemas
     gets(alum1.carrera);
+    printf("Ingrese su promedio\n");
+    scanf("%f",&alum1.promedio);
     puts("Su nombre es :");
     puts(alum1.nombre);
     puts("\nSu direccion es : ");
@@ -36,5 +39,6 @@ int main()
     printf("\nSu edad es :%i",alum1.edad);
     puts("\nSu carrera es : ");
     puts(alum1.carrera);    
+    printf("\nSu promedio es :%f",alum1.promedio);
     }
 }
